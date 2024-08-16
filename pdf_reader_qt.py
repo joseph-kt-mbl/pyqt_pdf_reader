@@ -50,7 +50,7 @@ class EdgeStylePDFReader(QMainWindow):
 
         # Previous Page button
         self.prev_page_button = QPushButton("Previous")
-        self.prev_page_button.setIcon(QIcon('./UP.svg'))  # Adjust path if needed
+        self.prev_page_button.setIcon(QIcon('./icons/UP.svg'))  # Adjust path if needed
         self.prev_page_button.setIconSize(QSize(24, 24))  # Adjusted icon size
         self.prev_page_button.clicked.connect(self.prev_page)
         self.style_nav_button(self.prev_page_button)
@@ -58,7 +58,7 @@ class EdgeStylePDFReader(QMainWindow):
 
         # Next Page button
         self.next_page_button = QPushButton("Next ")
-        self.next_page_button.setIcon(QIcon('./arrow-down.svg'))  # Adjust path if needed
+        self.next_page_button.setIcon(QIcon('./icons/arrow-down.svg'))  # Adjust path if needed
         self.next_page_button.setIconSize(QSize(24, 24))  # Adjusted icon size
         self.next_page_button.clicked.connect(self.next_page)
         self.style_nav_button(self.next_page_button)
